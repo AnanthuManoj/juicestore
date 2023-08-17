@@ -1,0 +1,335 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif ;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #eaeaea;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    color: orange;
+}
+::-webkit-scrollbar-thumb {
+    background: #F2BE22;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.topwave{
+    position: relative;
+}
+.topwave svg{
+    margin: 0;
+    padding: 0;
+    
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 100px;
+    margin-top: 20px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.navlist li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.navlist li a{
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navlist li a:hover{
+    color: white;
+}
+.navigation h1 span{
+    color: red;
+}
+.home{
+    display: flex;
+    
+}
+.homecontent{
+    margin: 0 7% 0;
+    max-width: 630px;
+}
+.homecontent h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.homecontent span{
+    color: red;
+}
+.homecontent p{
+    font-size: 18px;
+    line-height: 2rem;
+    font-family: 'Inconsolata', monospace;
+}
+.homeimage img{
+    width: 450px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 18%;
+}
+.homeimage{
+    margin-left: 5%;
+}
+.aboutcontainer{
+    margin: 16% 5% 0;
+   
+}
+.aboutimg img{
+    width: 60%;
+}
+
+.aboutcontent{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.aboutinfo{
+    font-size: 18px;
+    padding-top: 5%;
+}
+.aboutinfo span{
+    color: red;
+}
+.aboutinfo p{
+    line-height: 2rem;
+    font-family: 'Inconsolata', monospace;
+}
+.Menu{
+    position: relative; 
+}
+/* .Menu video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+   background: linear-gradient(rgba(0 0 0 0.5), rgba(0 0 0 0.5));
+} */
+.menucontainer{
+    margin: 10% 5% 0 8%;
+}
+
+.menuitems{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+   
+}
+.menucard{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    margin-top: 2rem;
+}
+.menucard:hover{
+    cursor: pointer;
+    transform:rotatey(180deg);
+}
+
+.menufront,
+.menuback,
+.menufront1,
+.menuback1,
+.menufront2,
+.menuback2,
+.menufront3,
+.menuback3,
+.menufront4,
+.menuback4,
+.menufront5,
+.menuback5,
+.menufront6,
+.menuback6,
+.menufront7,
+.menuback7{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.menufront{
+    background-image: url(images/abhishek-hajare-kkrXVKK-jhg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menuback{
+    background-color: #F2BE22;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.menufront1{
+    background-image: url(images/dhiren-maru--oSeTXBGt58-unsplash.jpg);
+    background-size: cover;
+}
+.menuback1{
+    background-color: yellowgreen;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.menufront2{
+    background-image: url(images/alexander-mils-U6dWj2nhPEA-unsplash.jpg);
+    background-size: cover;
+}
+.menuback2{
+    background-color: rgb(167, 38, 38);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.menufront3{
+    background-image: url(images/pineapple-2540622_1920.jpg);
+    background-size: cover;
+}
+.menuback3{
+    background-color: rgb(254, 236, 163);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.menufront4{
+    background-image: url(images/mixed-berry-smoothie-summer-drink.jpg);
+    background-size: cover;
+}
+.menuback4{
+    background-color: rgb(230, 16, 16);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.menufront5{
+    background-image: url(images/tabita-princesia-EQrqbGOGmG4-unsplash.jpg);
+    background-size: cover;
+}
+.menuback5{
+    background-color: pink;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.menufront6{
+    background-image: url(images/louis-hansel-h6Uh8YECcqg-unsplash.jpg);
+    background-size: cover;
+}
+.menuback6{
+    background-color: rebeccapurple;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.menufront7{
+    background-image: url(images/watermelon-.jpg);
+    background-size: cover;
+}
+.menuback7{
+    background-color: mediumvioletred;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.contactcontainer{
+    width: 80%;
+    margin: 50px auto;
+}
+.contactbox{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.contactleft{
+    flex-basis: 60%;
+    padding: 40%;
+}
+
+#contact{
+    margin: 8% 8% 3% 8%;
+}
+.iconset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon,.uparrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, #F2BE22,white);
+}
+.icon:hover i{
+    color:  red;
+    animation: shake 0.75s;
+}
+.footer{
+    margin-top: 5%;
+}
+.uparrow{
+    float: right;
+    background-image: linear-gradient(to bottom right, #F2BE22, white);
+    margin: 0px 10px 50px 0px;
+}
+.uparrow i:hover{
+    color: white;
+}
